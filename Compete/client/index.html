@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script> -->
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <div id="messages"></div>
+    <input type="text" id="message">
+    <button id="send">Send</button>
+</body>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        max-width: 80vw;
+        height: 100vh;
+        margin: auto;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+    }
+    div > *:not(:last-child){
+        margin-bottom: .5rem;
+    }
+    main > div{
+        background-color: red;
+        border: 1px solid black;
+        resize: both;
+        overflow: auto;
+    }
+    main{
+        height: 90vh;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+</style>
+</html>
